@@ -8,6 +8,7 @@
 <div class="container mt-1">
     <div class="row end-xs">
       <div class="col-xs-12">
+        <a mat-raised-button color="primary" class="mr-1" (click)="openLesseonDetail()">Lesson Detail</a>
         <a mat-raised-button color="primary" routerLink="/students/add" class="mr-1">Add</a>
         <input type="text" class="search-input" placeholder="Search" [(ngModel)]="filterString" (keyup)="filterStudents($event)">
         <!-- keyup -> klavyeden elimizi çektiğimizde tetiklenen method (javascript methodu) -->

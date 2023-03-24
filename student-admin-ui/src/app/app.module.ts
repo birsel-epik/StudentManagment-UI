@@ -21,13 +21,16 @@ import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatNativeDateModule} from "@angular/material/core";
 import {MatSelectModule} from "@angular/material/select";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
+import {MatDialogModule} from "@angular/material/dialog";
+import { LesssonsComponent } from './lesssons/lesssons.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavComponent,
     StudentsComponent,
-    ViewStudentComponent
+    ViewStudentComponent,
+    LesssonsComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +49,8 @@ import {MatSnackBarModule} from "@angular/material/snack-bar";
     MatDatepickerModule,
     MatNativeDateModule,
     MatSelectModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatDialogModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
